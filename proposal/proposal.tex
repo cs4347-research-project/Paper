@@ -1,0 +1,92 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{A Comparison of the Design of a CNN on Accuracy and Performance.}
+
+\author{Isaac van Til\\
+%Institution1\\
+%Institution1 address\\
+{\tt\small iwv1@txstate.edu}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+%\and
+%Second Author\\
+%Institution2\\
+%First line of institution2 address\\
+%{\tt\small secondauthor@i2.org}
+\and
+Johnathan Bringmann\\
+{\tt\small jab479@txstate.edu}
+\and
+Andrew Gonzalez\\
+{\tt\small a\textunderscore g1405@txstate.edu}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+   The purpose of our study is to identify a type of convolutional neural network (CNN) architecture that is best suited to identify different types of fruits. In doing so, we will examine each of these CNN architectures~\cite{A1}: 
+   \begin{center}
+       VGG16 \& VGG19~\cite{A2}\\ Google Inception~\cite{A3}\\ Resnet~\cite{A4}\\ Xception~\cite{A6} 
+   \end{center}
+   We will train each architecture of convolutional neural network to be able to recognize and categorize different images of fruit. Once we have trained the different architectures we will evaluate each of them and determine which one has the highest accuracy and greatest performance.
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Work previously done}
+
+Mure\c{s}an and Oltean~\cite{A5} used a convolutional neural network, recurrent neural network, and deep belief neural network to help classify images of fruit.
+
+\section{Proposed work}
+
+Our research will use different architectures of convolutional neural networks to determine which one is the best at categorizing different pictures of fruit. We will also quantify how much better any one specific design of neural network is over another at the aforementioned task. A comparison of our work will be made to that of Mure\c{s}an and Oltean to determine which (out of all the studied neural network designs) deep learning architecture is the most effective for fruit categorization. 
+
+\section{Preliminary plan}
+
+\subsection{Design}
+
+We will design and implement each of the neural network architectures mentioned in the problem statement.
+
+\subsection{Training}
+
+We will train each of the neural networks with the given data set of fruit photographs for an appropriate amount of time.
+
+\subsection{Analysis}
+
+Data about correct / incorrect classification of fruit pictures will be analyzed in order to select an appropriate model.
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
